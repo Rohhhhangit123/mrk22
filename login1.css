@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.container {
+    display: inherit;
+}
+
+.form-container {
+    display: inline-block;
+    /* display: grid; */
+    /* place-items: center; */
+    margin: auto;
+    padding: 3rem;
+    border-radius: 3rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.container>.form-container>h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    /* margin: auto !important; */
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+.label-and-input {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+
+input{
+    max-width: 17rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    border-color: #d17e1f;
+    border-radius: 0.5rem;
+
+}
+
+form>h3 {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#locateMe {
+    margin: auto;
+    margin-top: -0.9rem;
+    width: 50%;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid #d17e1f;
+    border-radius: 0.5rem !important;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    margin-bottom: 1.2rem !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #d17e1f;
+}
+
+button[type="submit"] {
+    font-size: 1.6rem;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    width: 17rem;
+    overflow: hidden;
+}
+
+.phone-input span:nth-child(2){
+    flex-grow: 1;
+}
+
+.phone-input span input{
+    width:100%;
+}
+
+.ageGroupSignUpWrapper {
+    width: 17rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ageGroupSignUpWrapper label {
+    border: 1px solid #d17e1f;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.ageGroupSignUpWrapper input[type="radio"]:checked+label {
+    background-color: #d17e1f;
+}
+
+input[type="radio"] {
+    /* padding: 0.3rem 1rem 0.3rem 1rem; */
+    /* border-radius: 0.5rem; */
+    display: none;
+}
